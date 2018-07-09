@@ -1,0 +1,47 @@
+@import "../../components/Style/foundation";
+
+.gtList-wrap {
+  background: $white;
+  overflow-y: auto;
+
+  .gtList-content {
+    background: $white;
+    width: 1090px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    .mj-loading {
+      padding-top: 100px;
+      .msg {
+        margin-bottom: -70px;
+        s {
+          color: #a3a3a3;
+        }
+      }
+    }
+
+    .gtList-list {
+      .mj-pagination {
+        margin-top: 30px;
+      }
+      .mj-loading {
+        padding-top: 160px;
+        .msg {
+          margin-bottom: -70px;
+          s {
+            color: #a3a3a3;
+          }
+        }
+      }
+      .no-res {
+        font-size: 24px;
+        color: #a3a3a3;
+        text-align: center;
+        padding-top: 5%;
+      }
+      .positionType {
+        position: unset;
+      }
+    }
+  }
+}

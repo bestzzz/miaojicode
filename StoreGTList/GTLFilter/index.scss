@@ -1,0 +1,173 @@
+@import "../../../components/Style/foundation";
+
+.gtl-filter {
+  width: 100%;
+  background: $extralightergray;
+  box-shadow: inset 0 -1px 0 0 #e1e1e1, inset 1px 0 0 0 #e1e1e1, inset -1px 0 0 0 #e1e1e1, inset 0 1px 0 0 #e1e1e1;
+  margin-bottom: 30px;
+
+  .filter-item {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    min-height: 40px;
+    &:last-child {
+      min-height: 50px;
+      .filter-left {
+        line-height: 50px;
+      }
+      .filter-single {
+        margin-top: 5px;
+      }
+      .filter-right-wrap .filter-right {
+        .option-item {
+          margin-top: 5px;
+        }
+      }
+    }
+    .filter-left {
+      width: 100px;
+      text-align: right;
+      flex-shrink: 0;
+      color: $darkfont;
+      font-weight: 600;
+      padding-right: 20px;
+      line-height: 40px;
+    }
+    .filter-right-wrap {
+      flex: 1;
+      display: flex;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 10px 0 10px;
+      align-items: flex-start;
+      .address-spec {
+        height: 20px;
+        overflow: hidden;
+      }
+      .filter-right {
+        display: flex;
+        align-items: flex-start;
+        line-height: 20px;
+
+        .date {
+          width: 210px;
+          .ant-calendar-picker-input {
+            height: 30px;
+            border-radius: 2px;
+          }
+        }
+        .address-tog {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+        .rotate {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          height: 25px;
+        }
+        .price {
+          display: flex;
+          justify-content: center;
+          .mjui-button-text {
+            font-size: 12px;
+          }
+          .vcen-in {
+            font-size: 12px;
+            text-align: center;
+            color: #333;
+          }
+          .border-inner {
+            height: 20px;
+          }
+          .mj-input-error-wrapper {
+            height: 20px;
+          }
+          .mj-input-error-wrapper:nth-child(2) {
+            margin-right: 10px;
+          }
+          .price-in {
+            font-size: 12px;
+            input::-webkit-input-placeholder {
+              font-size: 12px;
+            }
+          }
+        }
+        .icon-iconunselect:before {
+          background: #fff;
+        }
+        .icon-iconunselect {
+          color: #d9d9d9;
+        }
+        .mj-range-picker {
+          margin-right: 65px;
+        }
+      }
+    }
+    .option {
+      height: 20px;
+      margin-right: 20px;
+      max-width: 90px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .car-modal-item {
+      display: flex;
+      width: 90px;
+      height: 90px;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px;
+      .name {
+        color: #595959;
+        font-size: 12px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .mj-checkbox {
+      margin-right: -20px;
+    }
+    .mj-checkbox-item {
+      &.mj-checkbox-item-selected {
+        border-color: var(--brightColor);
+      }
+      .iconfont {
+        color: var(--brightColor);
+        right: -1px;
+      }
+    }
+  }
+  .single {
+    .option {
+      border-radius: 2px;
+      text-align: center;
+      width: 50px;
+      height: 20px;
+      border: 1px solid $darkgray;
+      background-color: $white;
+      &.radioChecked {
+        background-color: $darkfont;
+        border-color: $darkfont;
+        color: $white;
+      }
+      &.radioChecked:hover {
+        background-color: lighten($darkfont, 20%);
+        border-color: lighten($darkfont, 20%);
+      }
+      &.radioChecked:active {
+        background-color: darken($darkfont, 20%);
+        border-color: darken($darkfont, 20%);
+      }
+      &:hover {
+        background-color: $lightgray;
+      }
+      .option-select {
+        display: none;
+      }
+    }
+  }
+}

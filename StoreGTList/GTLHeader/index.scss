@@ -1,0 +1,83 @@
+@import "../../../components/Style/foundation";
+
+.gtl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 90px;
+
+  .gtl-header-l {
+    display: flex;
+    align-items: center;
+    span:nth-child(1) {
+      font-size: 18px;
+      font-weight: 900;
+      text-align: left;
+      max-width: 90px;
+      word-break: break-word;
+    }
+    .btn-toggle {
+      margin-left: 23px;
+      color: $font;
+      .iconfont {
+        font-size: 14px;
+        margin-left: 8px;
+        color: $extralightBlack;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .mjui-button-text-bold {
+        font-weight: 500;
+      }
+    }
+    .rotate {
+      .iconfont {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
+    }
+  }
+
+  // 热门城市弹窗
+  .hotcity {
+    padding: 16px;
+    position: absolute;
+    top: 75px;
+    z-index: 999;
+    width: 362px;
+    background-color: #fff;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.14);
+
+    h4 {
+      margin-top: 30px;
+      color: #a3a3a3;
+      font-weight: 600;
+    }
+    .city {
+      font-size: 12px;
+      div {
+        margin-top: 12px;
+      }
+      span:not(:last-child) {
+        display: inline-block;
+        width: 61px;
+      }
+      span {
+        cursor: pointer;
+      }
+    }
+    .mj-suggestion {
+      .ant-select-search--inline {
+        width: 82% !important;
+      }
+      .ant-select-selection_search {
+        padding: 6px 13px;
+      }
+    }
+    .ant-select-dropdown-menu-item {
+      min-height: 40px;
+    }
+  }
+}
